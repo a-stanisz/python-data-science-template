@@ -1,5 +1,5 @@
 {
-  "image": "mcr.microsoft.com/devcontainers/python",
+  "image": "mcr.microsoft.com/devcontainers/anaconda",
   "customizations": {
     "vscode": {
       "extensions": [
@@ -8,7 +8,10 @@
         "ms-python.vscode-pylance",
         "ms-toolsai.jupyter",
         "christian-kohler.path-intellisense"
-      ]
+      ],
+      "settings": {
+        "jupyter.sendSelectionToInteractiveWindow": true
+      }
     }
   },
   "forwardPorts": [8000]
